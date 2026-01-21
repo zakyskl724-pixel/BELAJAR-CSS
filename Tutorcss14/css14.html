@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Transition & Animation Dasar</title>
+  <style>
+    .button {
+      background-color: royalblue;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: crimson;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: teal;
+      margin-top: 40px;
+      animation: goyang 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes goyang {
+      0% {
+        transform: rotate(-5deg);
+      }
+      100% {
+        transform: rotate(5deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contoh Transition & Animation</h1>
+
+  <button class="button">Hover Saya</button>
+
+  <div class="box"></div>
+
+</body>
+</html>

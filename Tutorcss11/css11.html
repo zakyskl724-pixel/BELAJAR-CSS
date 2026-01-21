@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-class dan Pseudo-element</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a::after {
+      content: " 🔗";
+    }
+
+    input:focus {
+      border: 2px solid #3498db;
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+    p::first-letter {
+      font-size: 200%;
+      color: orange;
+    }
+
+    li:first-child {
+      color: green;
+    }
+
+    li:last-child {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contoh Pseudo-class & Pseudo-element</h1>
+
+  <a href="#">Link Ini</a>
+
+  <p>Ini adalah paragraf dengan pseudo-element yang menargetkan huruf dan baris pertama.</p>
+
+  <input type="text" placeholder="Ketik sesuatu..." />
+
+  <ul>
+    <li>Item pertama (first-child)</li>
+    <li>Item tengah</li>
+    <li>Item terakhir (last-child)</li>
+  </ul>
+
+</body>
+</html>

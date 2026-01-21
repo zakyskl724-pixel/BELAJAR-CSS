@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Display & Visibility</title>
+  <style>
+    .kotak-block {
+      display: block;
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .kotak-inline {
+      display: inline;
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    .kotak-inlineblock {
+      display: inline-block;
+      background-color: orange;
+      padding: 10px;
+      width: 100px;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="kotak-block">Saya block</div>
+  <span class="kotak-inline">Saya inline</span>
+  <span class="kotak-inline">Saya juga inline</span>
+
+  <div class="kotak-inlineblock">Saya inline-block</div>
+
+  <h2 class="hidden">Judul ini disembunyikan (visibility: hidden)</h2>
+  <h2 class="none">Judul ini tidak tampil (display: none)</h2>
+
+</body>
+</html>

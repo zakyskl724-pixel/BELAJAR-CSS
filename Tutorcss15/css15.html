@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables</title>
+  <style>
+    :root {
+      --warna-utama: #2ecc71;
+      --warna-teks: #ffffff;
+      --font-utama: 'Segoe UI', sans-serif;
+      --padding-besar: 24px;
+    }
+
+    body {
+      font-family: var(--font-utama);
+      background-color: #f4f4f4;
+      padding: var(--padding-besar);
+    }
+
+    .button {
+      background-color: var(--warna-utama);
+      color: var(--warna-teks);
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .card {
+      background-color: var(--warna-utama);
+      padding: var(--padding-besar);
+      color: var(--warna-teks);
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="button">Tombol</button>
+
+  <div class="card">
+    <h2>Kartu Info</h2>
+    <p>Ini adalah contoh penggunaan CSS Variables untuk mengatur warna dan ukuran secara konsisten.</p>
+  </div>
+
+</body>
+</html>
